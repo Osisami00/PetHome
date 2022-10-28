@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>SignUp Page</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="stylesheet.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="container-fluid bg-dark text-light">
+    <div class="row ">
+      <div class="col-md-4" style="padding: 12px;">
+        <img class="img-responsive signup-logo" src="assets/web-logo2.png">
+      </div>
+      <div class="col-md-4" style="padding-top: 50px;">
+        <form>
+          <div class="form-group">
+            <label type="inputName">Full name</label>
+            <input class="form-control" type="text" placeholder="Your full name" id="inputName" />
+          </div>
+          <div class="form-group">
+            <label type="inputDOB">Date of Birth</label>
+            <input class="form-control" type="number" placeholder="dd/mm/yy" id="inputDOB" />
+          </div>
+          <div class="form-group">
+            <label type="inputSex">Gender</label>
+            <input class="form-control" type="text" placeholder="sex..." id="inputSex" />
+          </div>
+          <div class="form-group">
+            <label type="inputAddress">Address</label>
+            <input class="form-control" type="text" placeholder="Place of residence" id="inputAddress" />
+          </div>
+          <div class="form-group">
+            <label type="inputEmail">Email</label>
+            <input class="form-control" type="Email" placeholder="Input email" id="inputEmail" />
+          </div>
+          <div class="form-group">
+            <label type="inputNameOfPet">Name of Pet</label>
+            <input class="form-control" type="text" placeholder="Name of your pet..." id="inptNameOfPet" />
+          </div>
+          <div class="form-group signup-button2">
+            <label for="inputDescription">Specie of Pet</label>
+            <br />
+            <label class="radio-inline">
+              <input type="radio" name="radioGroup" value="1" />
+              Cat
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="radioGroup" value="1" />
+              Dog
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="radioGroup" value="1" />
+              Rabbit
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="radioGroup" value="1" />
+              Parrot
+            </label class="radio-inline">
+            <label class="radio-inline">
+              <input type="radio" name="radioGroup" value="1" disabled />
+              Lion
+            </label class="radio-inline">
+          </div>
+          <div class="form-group signup-button2">
+            <label for="inputDescription">Tell us about your pet</label>
+            <textarea class="form-control" type="text" placeholder="Brief description of your pet..."
+              id="inputDescription" rows="5">
+            </textarea>
+            <a href="http://127.0.0.1:5500/pethome.html" class="btn btn-primary signup-button2">Submit</a>
+          </div>
+
+      </div>
+    </div>
+    <div class="col-md-4" style="padding: 30px;">
+
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

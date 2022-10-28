@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Home Page</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="stylesheet.css" rel="stylesheet">
+  <link href="css/all.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body style="padding: 0px; margin: 0px;" class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-dark z-index: 1  fixed-top sticky-top web-header">
+    <a class=" navbar-brand" href="http://127.0.0.1:5500/pethome.html">
+      <img class="web-logo" src="assets/web-logo1.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse home-text" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto bg-dark">
+        <li class="nav-item active home-icon">
+          <a class="nav-link text-dark" href="#">
+            <h5 class="text-light">Home</h5>
+          </a>
+        </li>
+        <li class="nav-item home-text">
+          <a class="nav-link text-dark home-text" href="#">
+            <h5 class="text-light">Explore</h5>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark home-text" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="h5 text-light">Book</span>
+          </a>
+          <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-light" href="#">Appointment</a>
+            <a class="dropdown-item text-light" href="#">Vaccination</a>
+            <a class="dropdown-item text-light" href="#">Date</a>
+            <a class="dropdown-item text-light" href="#">Mating Session</a>
+            <a class="dropdown-item text-light" href="#">Pet Hotel</a>
+            <a class="dropdown-item text-light" href="#">Pet Rehab</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown home-text ">
+          <a class="nav-link dropdown-toggle  forlink text-dark" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user"></i>
+            <span class="h5 text-light">Account</span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id='drop'>
+            <li><a class="dropdown-item" href="customerlogin.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Log
+                in</a></li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item text-dark" href="customregistration.php">
+                <button class='btn btn-primary' style="width:100%"><i class="fa fa-sign-in" aria-hidden="true"></i>
+                  Sign
+                  In</button>
+              </a></li>
+          </ul>
+
+        </li>
+        <li class="nav-item home-text">
+          <a class="nav-link disabled text-dark" href="#">
+            <h5 class="text-light">Documentation</h5>
+          </a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2 navbar" type="search" placeholder="Search" aria-label="Search">
+      </form>
+      <button class="btn btn-outline-success my-2 my-sm-0 navbar search-button" type="submit">Search</button>
+    </div>
+  </nav>
+  <div class="container bg-warning fixed-top sticky-top ">
+    <div class="row">
+      <div class="col-2">
+        <i class="fa-solid fa-location-dot"></i>
+        <a class="inline-block text-dark" href="#">Your Store: <u><b>Ibadan</b></u></a>
+      </div>
+      <div class="col-5">
+        <i class="fa-solid fa-van-shuttle"></i>
+        <span>Delivering To: <u><b>Block 6, Road 12, Bella Estate, Lagos.</b></u></span>
+      </div>
+      <div class="col-2">
+        <i class="fa-brands fa-servicestack"></i>
+        <a class="text-dark" href="#">Our Services</a>
+
+      </div>
+      <div class="col-3 ">
+        <i class="fa-solid fa-plane-departure"></i>
+        <a class="text-dark" href="#">Shop Inter-Country</a>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="padding-top: 40px; padding-right: 0px; padding-left: 0px; margin-bottom: 25px;">
+    <div class="row">
+      <img class="col-sm-6 petshop-advert" src="assets/Black White Pet Shop Sale Facebook Cover.png">
+      <img class="col-sm-6 petshop-advert" src="assets/50-off-first-rd-hero-img-.png">
+    </div>
+  </div>
+  <span class="h3 text-dark">Shop for Pets</span>
+  <hr />
+  </div>
+  <div class="conatainer">
+    <div class="row">
+      <div class="col-xs-10 col-sm-6 col-md-3">
+        <div class="row">
+          <img class="col-xs-10 col-sm-10 col-md-10 insurance_inf petshop-images img-responsive img-fluid"
+            src="assets/1.png">
+
+          <div class="col-xl-12 insurance_inf">
+            <a class="btn btn-outline-success float-xs-start pet-button" href="#">Dog</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-10 col-sm-6 col-md-3">
+        <div class="row">
+          <img class="col-xs-10 col-sm-10 col-md-10 insurance_inf petshop-images img-responsive img-fluid"
+            src="assets/2.png">
+
+          <div class="col-xl-12 insurance_inf">
+            <a class="btn btn-outline-success float-xs-start  pet-button" href="#">Squirrel</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-10 col-sm-6 col-md-3">
+        <div class="row">
+          <img class="col-xs-10 col-sm-10 col-md-10 insurance_inf petshop-images img-responsive img-fluid"
+            src="assets/3.png">
+
+          <div class="col-xl-12 insurance_inf">
+            <a class="btn btn-outline-success float-xs-start float-sm-start pet-button" href="#">Fish</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-10 col-sm-6 col-md-3">
+        <div class="row">
+          <img class="col-xs-10 col-sm-10 col-md-10 insurance_inf petshop-images img-responsive img-fluid"
+            src="assets/4.png">
+
+          <div class="col-xl-12 insurance_inf">
+            <a class="btn btn-outline-success float-xs-end float-sm-start pet-button" href="#">Cat</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-10 col-sm-6 col-md-3">
+        <div class="row">
+          <img class="col-xs-10 col-sm-10 col-md-10 insurance_inf petshop-images img-responsive img-fluid"
+            src="assets/5.png">
+
+          <div class="col-xl-12 insurance_inf">
+            <a class="btn btn-outline-success float-xs-start pet-button" href="#">Rabbit</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-10 col-sm-6 col-md-3">
+        <div class="row">
+          <img class="col-xs-10 col-sm-10 col-md-10 insurance_inf petshop-images img-responsive img-fluid"
+            src="assets/6.png">
+
+          <div class="col-xl-12 insurance_inf">
+            <a class="btn btn-outline-success float-xs-start pet-button" href="#">Horse</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-3">
+        <div class="row">
+          <img class="col-xs-10 col-sm-10 col-md-10 insurance_inf petshop-images img-responsive img-fluid"
+            src="assets/8.png">
+
+          <div class="col-xl-12 insurance_inf">
+            <a class="btn btn-outline-success float-xs-start float-sm-start pet-button" href="#">Bird</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-3">
+        <div class="row">
+          <img class="col-xs-10 col-sm-10 col-md-10 insurance_inf petshop-images img-responsive img-fluid"
+            src="assets/camelonnnn.png">
+
+          <div class="col-xl-12 insurance_inf">
+            <a class="btn btn-outline-success float-xs-end float-sm-start " href="#">Reptile</a>
+          </div>
+        </div>
+      </div>
+      <span class="text-dark h3"><b>Pet Accessories</b><i class="fa-solid fa-cart-shopping"></i></span>
+      <hr />
+      <div class="container">
+        <div class="row">
+          <img class="col-sm-6 img-responsive petaccessories my-0" src="assets/petaccessory3.png">
+          <img class="col-sm-6 img-responsive petaccessories my-0" src="assets/petaccessory2.png">
+        </div>
+      </div>
+      <span class="text-dark h3 mt-4"><b>Pet Food & Kits</b><i class="fa-solid fa-cart-shopping"></i></span>
+      <div class="container">
+        <div class="row">
+          <img class="col-sm-8 img-responsive" src="assets/petfood.jpg">
+          <img class="col-sm-4 img-responsive" src="assets/petkit.jpg">
+        </div>
+      </div>
+      <div class="container offset-sm-1 mt-4" style="margin-left: 0px;">
+        <div class="row">
+          <img class="col-sm-2 col-xs-4  mainContent img-responsive round petkit_images" src="assets/petkit111.jpg">
+          <div class="col-sm-1 col-xs-2 classMargin">
+            <div class="row">
+              <div class="col-sm-12 sidebarContent">
+                <p class="item-nam video-title strong inline text-dark"><b><a class="text-dark" href="#">Neck
+                      Belt</a></b>
+                </p>
+                <a href="#" class="pet-price"><b>#7999.9</b></a>
+              </div>
+
+              <div class="col-sm-12 sidebarContent">
+                <a href="#" class="btn btn-outline-info">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <img class="col-sm-2 col-xs-4  mainContent img-responsive round" src="assets/petkit222.jpg">
+          <div class="col-sm-1 col-xs-2 classMargin">
+            <div class="row">
+              <div class="col-sm-12 sidebarContent">
+                <p class="item-name strong inline"><b><a class="text-dark" href="#">Fur Dryer</a></b></p>
+                <a href="#" class="pet-price"><b>#2459.9</b></a>
+              </div>
+              <div class="col-sm-12 sidebarContent">
+                <a href="#" class="btn btn-outline-info">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <img class="col-sm-2 col-xs-4 mainContent img-responsive" src="assets/petkit333.jpg">
+          <div class="col-sm-1 col-xs-2 classMargin">
+            <div class="row">
+              <div class="col-sm-12 sidebarContent">
+                <p class="item-name strong inline text-dark"><b><a class="text-dark" href="#">Food Tray</a></b></p>
+                <a href="#" class="pet-price"><b>#3999.9</b></a>
+              </div>
+              <div class="col-sm-12 sidebarContent">
+                <a href="#" class="btn btn-outline-info">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <img class="col-sm-2 col-xs-4 mainContent img-responsive" src="assets/petkit444.jpg">
+          <div class="col-sm-1 col-xs-2 classMargin">
+            <div class="row">
+              <div class="col-sm-12 sidebarContent">
+                <p class="item-name strong inline text-dark"><b><a class="text-dark" href="#">Pet House</a></b></p>
+                <a href="#" class="pet-price"><b>#23000</b></a>
+              </div>
+              <div class="col-sm-12 sidebarContent">
+                <a href="#" class="btn btn-outline-info">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <img class="col-sm-2 col-xs-4  mainContent img-responsive" src="assets/petkit555.jpg">
+          <div class="col-sm-1 col-xs-2 classMargin">
+            <div class="row">
+              <div class="col-sm-12 sidebarContent">
+                <p class="item-name strong inline text-dark"><b><a class="text-dark" href="#">Pet Shampoo</a></b></p>
+                <a href="#" class="pet-price"><b>#1609.9</b></a>
+              </div>
+              <div class="col-sm-12 sidebarContent">
+                <a href="#" class="btn btn-outline-info">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <img class="col-sm-2 col-xs-4 mainContent img-responsive round" src="assets/petkit666.jpg">
+          <div class="col-sm-1 col-xs-2 classMargin">
+            <div class="row">
+              <div class="col-sm-12 sidebarContent">
+                <p class="item-name strong inline text-dark"><b><a class="text-dark" href="#">Fur Brush</a></b></p>
+                <a href="#" class="pet-price"><b>#640</b></a>
+              </div>
+              <div class="col-sm-12 sidebarContent">
+                <a href="#" class="btn btn-outline-info">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <img class="col-sm-2 col-xs-4  mainContent img-responsive" src="assets/petkit777.jpg">
+          <div class="col-sm-1 col-xs-2 classMargin">
+            <div class="row">
+              <div class="col-sm-12 sidebarContent">
+                <p class="item-name strong inline text-dark"><b><a class="text-dark" href="#">Artificial Claws</a></b>
+                </p>
+                <a href="#" class="pet-price"><b>#200000</b></a>
+              </div>
+              <div class="col-sm-12 sidebarContent">
+                <a href="#" class="btn btn-outline-info">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="h1 text-dark" style="margin-top: 120px;">PetInsure</span>
+      <hr />
+      <div class="container background-picture">
+        <div class="row">
+          <div class="col-sm-3 offset-sm-2 col-xs-2 insure_plan ">
+            <div class="row">
+              <div class="col-xl-12 insurance_plan">
+                <span class="h2 text-center" style="color: rgb(189, 36, 36);">Basic Plan</span>
+              </div>
+              <div class="col-xl-12 insurance_info ">
+                <ul style="color: black;">
+                  <li><b>Covers vet fees for sudden or unexpected injury or illness</b></li>
+                  <li><b>Cover vet fees for each condition are covered for 12 months following initial claim</b></li>
+                  <li><b>Time Limited</b></li>
+                  <li><b>Policy renewable every 12months</b></li>
+                </ul>
+              </div>
+              <div class="col-xl-12">
+                <a class="btn btn-outline-success float-xs-end float-sm-end float-md-end float-lg-end"
+                  href="#">Subscribe</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 offset-sm-2 col-xs-2 insure_plan ">
+            <div class="row">
+              <div class="col-xl-12 insurance_plan">
+                <span class="h2 text-center" style="color: rgb(189, 36, 36);">Accident Plan</span>
+              </div>
+              <div class="col-xl-12 insurance_info ">
+                <ul style="color: black;">
+                  <li><b>Covers vet fees for sudden or unexpected injury or illness</b></li>
+                  <li><b>Policy renewable every 12months</b></li>
+                </ul>
+              </div>
+              <div class="col-xl-12">
+                <a style="margin-top: 94px;"
+                  class="btn btn-outline-success float-xs-end float-sm-end float-md-end float-lg-end"
+                  href="#">Subscribe</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 offset-sm-1 col-xs-2 insure_plan ">
+            <div class="row">
+              <div class="col-xl-12 insurance_plan">
+                <span class="h2 text-center" style="color: rgb(189, 36, 36);">Premium Plan</span>
+              </div>
+              <div class="col-xl-12 insurance_info ">
+                <ul style="color: black;">
+                  <li><b>Covers vet fees for sudden or unexpected injury or illness</b></li>
+                  <li><b>Vet fees for each condition are covered without any time limit following initial claim*</b>
+                  </li>
+                  <li><b>Vet fees for each condition are covered for 12 months following initial claim*</b></li>
+                  <li><b>Time Limited</b></li>
+                  <li><b>Policy renewable every 12months</b></li>
+                </ul>
+              </div>
+              <div class="col-xl-12">
+                <a class="btn btn-outline-success float-xs-end float-sm-end float-md-end float-lg-end"
+                  href="#">Subscribe</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 offset-sm-2 col-xs-2 insure_plan ">
+            <div class="row">
+              <div class="col-xl-12 insurance_plan">
+                <span class="h2 text-center" style="color: rgb(189, 36, 36);">Life Plan</span>
+              </div>
+              <div class="col-xl-12 insurance_info ">
+                <ul style="color: black;">
+                  <li><b>Covers vet fees for sudden or unexpected injury or illness</b></li>
+                  <li><b>Cover vet fees for each condition are covered for 12 months following initial claim</b></li>
+                  <li><b>Vet fees for each condition are covered up to a maximum amount, without any time limit, and the
+                      maximum amount resets every policy year**</b></li>
+                </ul>
+              </div>
+              <div class="col-xl-12">
+                <a class="btn btn-outline-success float-xs-end float-sm-start float-md-end float-lg-end"
+                  href="#">Subscribe</a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <span class="h1 text-dark" style="margin-top: 120px;">Coming Soon...</span>
+      <hr />
+      <div class="conatainer">
+        <a class="row" href="#">
+          <img class="col-sm-5 offset-lg-1 col-lg-3 offset-sm-1 new_features" style="margin-top: 25px;"
+            src="assets/pet_care.jpg">
+          <img class="col-sm-5 offset-lg-1 col-lg-3 offset-sm-1 new_features" style="margin-top: 25px;"
+            src="assets/pet_diet.jpg">
+          <img class="col-sm-5 offset-lg-1 col-lg-3 offset-sm-1 new_features" style="margin-top: 25px;"
+            src="assets/pet_emergency.jpg">
+          <img class="col-sm-5 offset-lg-1 col-lg-3 offset-sm-1 new_features" style="margin-top: 25px;"
+            src="assets/pet_seminar.jpg">
+          <img class="col-sm-5 offset-lg-1 col-lg-3 offset-sm-1 new_features" style="margin-top: 25px;"
+            src="assets/petcare_center.jpg">
+          <img class="col-xs-6 col-sm-5 offset-lg-1 col-lg-3 offset-sm-1 new_features" style="margin-top: 25px;"
+            src="assets/pet_right.jpg">
+          <img class="col-xs-5 offset-xs-1 col-sm-5 offset-lg-1 col-lg-3 offset-sm-1 new_features"
+            style="margin-top: 25px;" src="assets/pet_party.jpg">
+          <img class="col-xs-6 col-sm-5 offset-lg-1 col-lg-3 offset-sm-1 new_features" style="margin-top: 25px;"
+            src="assets/pet_right.jpg">
+          <img class="col-xs-5 offset-xs-1 col-sm-5 offset-lg-1 col-lg-3 offset-sm-1 new_features"
+            style="margin-top: 25px;" src="assets/pet_party.jpg">
+        </a>
+        <hr />
+
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 offset-sm-10 col-lg-1 offset-lg-11 last_div1">
+            <img class=" img-responsive web_logo" src="assets/web-logo2.png">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-3 last_div">
+            <p class="text-center text-header">Customer Service</p>
+            <a class="text-center text" href="#">Track order</a>
+            <a class="text-center text" href="#">Returns</a>
+            <a class="text-center text" href="#">Pet Store Locator</a>
+            <a class="text-center text" href="#">Help</a>
+            <a class="text-center text" href="#">Company Policy</a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-3 last_div">
+            <p class="text-center text-header">Services</p>
+            <a class="text-center text" href="#">Vital Care</a>
+            <a class="text-center text" href="#">Pet Grooming</a>
+            <a class="text-center text" href="#">Pet Rehab</a>
+            <a class="text-center text" href="#">PetHome Pay</a>
+            <a class="text-center text" href="#">Self-Serve Pet Wash</a>
+            <a class="text-center text" href="#">Positive Pet Training</a>
+            <a class="text-center text" href="#">Pet Diet</a>
+            <a class="text-center text" href="#">Pet Insurance</a>
+            <a class="text-center text" href="#">Pet Adoption</a>
+            <a class="text-center text" href="#">Repeat Order</a>
+            <a class="text-center text" href="#">Monthly Subscription</a>
+            <a class="text-center text" href="#">Buy a Pet</a>
+            <a class="text-center text" href="#">Resource Center</a>
+            <a class="text-center text" href="#">Best-selling Products</a>
+            <a class="text-center text" href="#">Dog Breed Informationt</a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-3 last_div">
+            <p class="text-center text-header">Corporate</p>
+            <a class="text-center text" href="#">Careers</a>
+            <a class="text-center text" href="#">About Us</a>
+            <a class="text-center text" href="#">Mision and Vision</a>
+            <a class="text-center text" href="#">Code of Ethics</a>
+            <a class="text-center text" href="#">COVID-19 Response</a>
+            <a class="text-center text" href="#">Event Sponsorships</a>
+            <a class="text-center text" href="#">Vendors</a>
+            <a class="text-center text" href="#">Affiliate Program</a>
+            <a class="text-center text" href="#">Coupons and Promos</a>
+            <a class="text-center text" href="#">Investors<i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-3 last_div">
+            <p class="text-center text-header">Keep in touch</p>
+            <form>
+              <div class="form-floating mt-3 mb-3">
+                <input type="url" class="form-control" id="floatingUrl" palceholder="Email">
+                <label for="floatingUrl">Email<i class="fa-solid fa-envelope"></i></label>
+                <a class="btn btn-primary mt-1" href="#">Send</a>
+              </div>
+            </form>
+            <p class="text1 text-center">
+              Sign up to receive updates, special offers, program communications and other information from PetHome.
+            </p>
+            <a data-toggle="tooltip" data-placement="top" title="Facebook" href="#"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a data-toggle="tooltip" data-placement="top" title="Twitter" href="#"><i
+                class="fa-brands fa-twitter"></i></a>
+            <a data-toggle="tooltip" data-placement="top" title="Pinterest" href="#"><i
+                class="fa-brands fa-pinterest"></i></a>
+            <a data-toggle="tooltip" data-placement="top" title="Instagram" href="#"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a data-toggle="tooltip" data-placement="top" title="Youtube" href="#"><i
+                class="fa-brands fa-youtube"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
